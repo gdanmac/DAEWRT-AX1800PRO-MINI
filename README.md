@@ -1,7 +1,9 @@
 # DAEWRT-AX1800PRO-MINI
 京东云亚瑟AX1800pro专属固件包  MINI版
   
-  超强精简，使用luci-app-dae、samba4、openlist2、tailscale，内存占用65%。
+  超强精简，使用luci-app-dae、samba4、openlist2、tailscale，内存占用仅65%。
+
+  固件集成增强版geoip.dat、geosite.dat,开箱即用，正确配置Dae不会报错
   
   确保最大性能发挥，开启内核eBPF，Dae吃鹅优选，建议硬改1GB内存的使用。
   
