@@ -131,12 +131,12 @@ jobs:
 
 
 #############################测试代码####
-       - name: Update Dae rules
-         run: |
-          cd ./wrt/
-          mkdir -p files/usr/share/dae
-          wget -O files/usr/share/dae/geoip.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
-          wget -O files/usr/share/dae/geosite.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
+      - name: Update Dae rules
+        run: |
+         cd ./wrt
+         mkdir -p files/usr/share/dae
+         wget -O files/usr/share/dae/geoip.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
+         wget -O files/usr/share/dae/geosite.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
     
 
 
