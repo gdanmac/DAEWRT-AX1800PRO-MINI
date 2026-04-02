@@ -131,14 +131,15 @@ jobs:
 
 
 #############################测试代码####
-      - name: Update Dae rules
+      - name: Update Dae/Daed rules
         run: |
          cd ./wrt
          mkdir -p files/usr/share/dae
          wget -O files/usr/share/dae/geoip.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
          wget -O files/usr/share/dae/geosite.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
-         ln -s /usr/share/dae /usr/share/daed
-    
+         cd files/usr/share
+         ln -s dae daed
+         ls -l
 
 
 #############################测试代码####
